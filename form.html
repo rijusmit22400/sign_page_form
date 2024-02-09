@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>survey-form</title>
+    </head>
+    <body>
+        <h1 id="title">
+            freeCodeCamp Survey Form
+        </h1>
+        <p id="description">
+            Thank you for taking the time to help us improve the platform
+        </p>
+        <form id="survey-form" method>
+            <div>
+                <p> Enter Your Name:</p>
+                <label id="name-label">
+                    <input type="text" id="name" name="name" required
+                        placeholder="Enter your name">
+                </label>
+            </div>
+            <div>
+                <label id="email-label">
+                    <p>Email:</p>
+                    <input type="email" id="email" name="email" required
+                        placeholder="Enter your email">
+                </label>
+            </div>
+            <div>
+                <label id="number-label">
+                    <p>Age:</p>
+                    <input type="number" id="number" name="number" required
+                        min="18" max="60" placeholder="Age">
+                </label>
+            </div>
+            <div>
+                <p>Which option best describes your current role?</p>
+                <label>
+                    <select id="dropdown">
+                        <option value>
+                            Select Your Current Role
+                        </option>
+                        <option value="student">
+                            Student
+                        </option>
+                        <option value="profesional">
+                            IT Professional
+                        </option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label>
+                    <p>Definitely: <input type="radio" value="Definitely"
+                            name="recommend"></p>
+                </label>
+                <label>
+                    <p>Maybe: <input type="radio" value="Maybe"
+                            name="recommend">
+                    </p>
+                </label>
+            </div>
+            <div>
+                <p>Add More courses to your list:</p>
+                <label>
+                    <p><input type="checkbox" value="front-end">
+                        Front-End-Development</p>
+                    <p><input type="checkbox" value="back-end">
+                        Back-End-Development</p>
+                    <p><input type="checkbox" value="api"> API </p>
+                </label>
+            </div>
+            <div>
+                <p>Tell us more about your experience.</p>
+                <label>
+                    <textarea placeholder="Your response goes here"></textarea>
+                </label>
+            </div>
+            <label>
+                <input type="submit" id="submit">
+            </label>
+        </form>
+    </body>
+</html>
